@@ -1,4 +1,4 @@
-Sanity:
+Sanity Setup:
 ++++++++++++++++
 cmd to install sanity cli:
 >> npx -y @sanity/cli init --template get-started --project fncjx0wz --dataset production --provider github
@@ -6,3 +6,32 @@ cmd to install sanity cli:
 After installtion use following command to initialize sanity studion on localhost:3333
 First: cd E:\Development Projects\shafekul-abid-portfolio\gold-mantis - to enter project’s directory
 Then:  npx @sanity/cli start - to run Sanity Studio
+
+------
+To connect Front (react) end to Backend (sanity)
+ - we've first went to https://www.sanity.io/manage/personal/project/fncjx0wz/api
+ - and to insert react server: http://localhost:3000 to CORS origins as trusted host
+ - then in the src folder we've created the clint.js file so that react can talk to sanity for-
+ - any requirement through client.js
+
+Installing TailwindCSS [https://tailwindcss.com/docs/guides/create-react-app]
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ - First Create React Project using the command: 
+> npx create-react-app my-project
+ - Then go the project folder - 
+> cd my-project
+ - Then install Tailwind using following commands:
+> npm install -D tailwindcss postcss autoprefixer
+ - Then following to initialize dependencies:
+> npx tailwindcss init -p
+ - Then Configure the 'tailwind.config.js' file to add following items
+ content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
+ - Then in index.css add followings:
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ - Finally run the following command in the project folder
+> npm run start
+
