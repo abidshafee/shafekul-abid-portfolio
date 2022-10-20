@@ -1,0 +1,8 @@
+Sanity:
+++++++++++++++++
+cmd to install sanity cli:
+>> npx -y @sanity/cli init --template get-started --project fncjx0wz --dataset production --provider github
+
+After installtion use following command to initialize sanity studion on localhost:3333
+First: cd E:\Development Projects\shafekul-abid-portfolio\gold-mantis - to enter project’s directory
+Then:  npx @sanity/cli start - to run Sanity Studio
