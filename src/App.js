@@ -11,6 +11,7 @@ import Project from "./components/Project";
 function App() {
   return (
     <>
+      <NavBar/>
       <Routes>
         <Route element={<Home/>} path='/'/>
         <Route element={<About/>} path='/about'/>
@@ -18,7 +19,6 @@ function App() {
         <Route element={<Posts/>} path='/post'/>
         <Route element={<Project/>} path='/project'/>
       </Routes>
-      <NavBar/>
     </>
   );
 }
