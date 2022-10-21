@@ -40,3 +40,10 @@ React Router Dom
 In order to enabling react routing capability from page to -
 page we need to install react-router-dom using following command:
 > npm install react- router-dom 
+
+Installing React-Icon:
+++++++++++++++++++++++
+> npm install react-icon --save
+Usage:
+> import {FaIcon} from 'react-icon/fa';
+> return <h2><FaIcon/>My h2 heading</h2>

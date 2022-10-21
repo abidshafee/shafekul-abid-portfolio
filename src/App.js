@@ -1,27 +1,25 @@
 // import {BrowserRouter, Route, Routes} from "react-router-dom";
+import {Route, Routes} from "react-router-dom";
 
 import NavBar from "./components/NavBar";
+import Home from "./components/Home";
+import About from "./components/About";
+import SinglePost from "./components/SinglePost";
+import Posts from "./components/Post";
+import Project from "./components/Project";
 
 function App() {
   return (
-    // <div className='text-4xl font-bold font-myfont'>
-    //   <h1>Shafekul Abid</h1>
-    // </div>
-    
-    // Switch has been replaced by Routes
-    // <BrowserRouter>
-    //   <Routes>
-    //     <Route component={Home} path='/' exact />
-    //     <Route component={About} path='/about'/>
-    //     <Route component={SinglePost} path='/post/:slug'/>
-    //     <Route component={Post} path='/post'/>
-    //     <Route component={Project} path='/project'/>
-    //   </Routes>
-    // </BrowserRouter>
-
-    <div>
+    <>
+      <Routes>
+        <Route element={<Home/>} path='/'/>
+        <Route element={<About/>} path='/about'/>
+        <Route element={<SinglePost/>} path='/post/:slug'/>
+        <Route element={<Posts/>} path='/post'/>
+        <Route element={<Project/>} path='/project'/>
+      </Routes>
       <NavBar/>
-    </div>
+    </>
   );
 }
 
