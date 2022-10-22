@@ -35,11 +35,40 @@ Installing TailwindCSS [https://tailwindcss.com/docs/guides/create-react-app]
  - Finally run the following command in the project folder
 > npm run start
 
-React Router Dom 
-+++++++++++++++++++
+React Router
++++++++++++++
 In order to enabling react routing capability from page to -
 page we need to install react-router-dom using following command:
 > npm install react- router-dom 
+
+Then import:
+> import { BrowserRouter } from 'react-router-dom';
+to enable routing capability in browser.
+to use it wrap the <App/> component in index.js:
+
+import { BrowserRouter } from 'react-router-dom';
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </React.StrictMode>
+);
+Then in App.js file import Route and Routes:
+> import {Route, Routes} from "react-router-dom";
+Then create route for individual pages:
+      <Routes>
+        <Route element={<Home/>} path='/'/>
+        <Route element={<About/>} path='/about'/>
+        <Route element={<SinglePost/>} path='/post/:slug'/>
+        <Route element={<Posts/>} path='/post'/>
+        <Route element={<Project/>} path='/project'/>
+      </Routes>
+Now to use the route import link:
+> import { Link } from "react-router-dom";
+and use the link tag to routing to individual page:
+<Link to={/about}>{name}</Link>
 
 Installing React-Icon:
 ++++++++++++++++++++++

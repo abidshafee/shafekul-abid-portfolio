@@ -1,12 +1,12 @@
 import React from "react";
 
-export default function Project() {
+export default function Post() {
     return (
-        <div name="Projects"
+        <div name="Blog"
         className ="h-screen w-full pt-20 bg-gradient-to-b from-slate-800 via-gray-800 to-black"
         >
             <div>
-            <h2 className="text-white text-xl">My Projects</h2>
+            <h2 className="text-white text-xl">My Blog</h2>
             </div>
         </div>
     )

@@ -8,7 +8,7 @@ import React from "react";
 const Home = () => {
     return (
         <div name="home"
-        className ="h-screen w-full pt-20 bg-gradient-to-b from-indigo-800 to-gray-800"
+        className ="h-screen w-full pt-20 bg-gradient-to-b from-slate-800 via-gray-800 to-black"
         >
             <div>
             <h2 className="text-white text-xl">Portfolio Home</h2>
