@@ -1,6 +1,7 @@
 import React from "react";
 import abid from "../assets/ShafekulAbid.png"
 //import NavBar from "./NavBar";
+import bgimg from "../assets/abid_bg.jpg"
 
 // export default function Home() {
 //     return <h1>Home</h1>
@@ -11,7 +12,8 @@ const Home = () => {
         <div name="home"
         className ="h-screen w-full pt-20 bg-gradient-to-b from-slate-800 via-gray-800 to-black text-white"
         >
-            <div className="max-w-screen-lg mx-auto flex items-center 
+            <img src={bgimg} alt="cover img" className="absolute object-cover w-full h-full"/>
+            <div className="relative max-w-screen-lg mx-auto flex items-center 
             flex-col justify-center h-full px-4 md:flex-row">
                 <div className="flex flex-col justify-center h-full">
                     <h2 className="text-white text-4xl pr-4 sm:7xl font-bold inline border-b-4 border-lime-500">Hello! Shafekul Abid here!</h2>
